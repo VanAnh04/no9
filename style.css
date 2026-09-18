@@ -91,6 +91,7 @@ button {
 .p-hero-content {
   padding-top: 85px;
   width: 409px;
+  padding-left: 40px;
 }
 
 .p-hero-desc {
@@ -248,6 +249,63 @@ button {
   color: #fff;
 }
 
+.p-qualifycation-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+}
+
+.p-qualifycation-left-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid #E6E8EB;
+}
+
+.p-qualifycation-left-columns-end {
+  border-bottom: none;
+}
+
+.p-qualifycation__address {
+  color: #1777E5;
+  font-weight: 500;
+}
+
+.p-qualifycation-detail__title {
+  color:#132238;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.p-qualifycation-wrapper-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-qualifycation-section__title{
+  text-align: center;
+  color: #132238;
+  font-size: 30px;
+}
+
+.p-qualifycation-section__description {
+  text-align: center;
+  width: 500px;
+}
+
+.p-qualifycation-wrapper-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+}
+
+.p-wrapper-award-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .p-wapper-success-story {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -313,4 +371,60 @@ button {
   display: flex;
   justify-content: center;
   gap: 15px;
+}
+
+.l-site-footer{
+  background-color: #132238;
+}
+
+.l-footer-wrapper-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 150px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-bottom: 0.5px solid #A5ACB5;
+}
+
+.l-footer-content__text {
+  color: #fff;
+  font-size: 41px;
+}
+
+.l-footer-content-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.l-footer-button {
+  width: 216px;
+}
+
+.l-footer-bottom {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.l-copyright {
+  font-size: 0.88rem;
+  color: #A5ACB5;
+}
+
+.l-footer-link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-bottom: 0.5px solid #A5ACB5;
+}
+
+.l-footer-wapper-item {
+  display: flex;
+  list-style: none;
+}
+
+.l-footer-wapper-follow{
+  display: flex;
+  list-style: none;
 }
