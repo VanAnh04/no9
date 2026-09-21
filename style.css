@@ -1,5 +1,5 @@
 :root {
-  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-main: 'JetBrains Mono', monospace;
 }
 
 * {
@@ -90,7 +90,7 @@ button {
 
 .p-hero-content {
   padding-top: 85px;
-  width: 409px;
+  width: 750px;
   padding-left: 40px;
 }
 
@@ -99,7 +99,7 @@ button {
 }
 
 .p-hero-title {
-  font-size: 2.1rem;
+  font-size: 3.1rem;
 }
 
 .p-hero-name {
@@ -151,6 +151,11 @@ button {
 .p-working-history-section {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.p-working-history-subtitle{
+  width: 634px;
+  text-align: center;
 }
 
 .p-working-grid {
@@ -249,10 +254,15 @@ button {
   color: #fff;
 }
 
+.p-qualifycation-section {
+  padding: 50px;
+}
+
 .p-qualifycation-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
+  gap: 5px;
 }
 
 .p-qualifycation-left-columns {
@@ -291,19 +301,81 @@ button {
 
 .p-qualifycation-section__description {
   text-align: center;
-  width: 500px;
+  width: 565px;
 }
 
 .p-qualifycation-wrapper-right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
+  gap: 15px;
 }
 
 .p-wrapper-award-img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: -66px;
+}
+
+.p-wrapper-award {
+  border: 1px solid #E6E8EB;
+  padding: 22px;
+  margin-bottom: 40px;
+}
+
+
+
+.p-wrapper-sensitive-person {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.p-sensitive-person-right-avt {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
+.p-sensitive-person-right-writenby {
+  color: #fff;
+}
+
+.p-sensitive-person-right__name {
+  height: 50px;
+  font-size: 10px;
+}
+
+.p-sensitive-person-right-detail__title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #fff;
+}
+
+.p-sensitive-person-right__title {
+  color: #fff;
+  font-size: 25px;
+}
+
+.p-sensitive-person-section {
+  background: linear-gradient(to right, #fff 33.33%, #132238 33.33%);
+}
+
+.p-sensitive-person-right {
+  position: relative;
+  border-left: none;
+
+  &::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15%;
+  height: 70%;
+  border-left: 1px solid #424E60;
+}
+  width: 800px;
+  padding: 70px;
 }
 
 .p-wapper-success-story {
@@ -428,3 +500,54 @@ button {
   display: flex;
   list-style: none;
 }
+
+@media screen and (max-width: 1024px) {
+  .p-working-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .p-qualifycation-wrapper{
+    grid-template-columns: 1fr;
+  }
+  .p-wapper-success-story{
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .p-eventshow-wrapper-grid{
+    grid-template-columns: 1fr;
+  }
+  .l-footer-wrapper-content{
+    grid-template-columns: 1fr;
+  }
+  .p-wapper-education{
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: unset;
+  }
+  .p-eventshow-section{
+    padding: 10px;
+  }
+  .p-wrapper-sensitive-person{
+    grid-template-columns: 1fr;
+    background-color: #132238;
+  }
+  .sensitive-person-img {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .p-working-grid{
+    grid-template-columns: 1fr;
+  }
+  .p-working-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {}
