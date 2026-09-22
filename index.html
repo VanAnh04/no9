@@ -11,9 +11,15 @@
 </head>
 
 <body>
-
   <header class="l-site-header" id="header">
-    <div class="c-container l-header-container"> 
+    <div class="c-container l-header-container">
+      <input type="checkbox" id="mobile-menu" class="l-mobile-menu-input" aria-label="Toggle navigation menu">
+      <label for="mobile-menu" class="l-mobile-toggle" aria-label="Toggle navigation menu">
+        <span class="l-toggle-bar"></span>
+        <span class="l-toggle-bar"></span>
+        <span class="l-toggle-bar"></span>
+      </label>
+      <label for="mobile-menu" class="l-mobile-overlay" aria-hidden="true"></label>
       <nav class="l-main-nav" id="mainNav">
         <ul class="l-nav-list">
           <li class="l-nav-item"><a href="#" class="l-nav-link">Home</a></li>
@@ -23,6 +29,9 @@
           <li class="l-nav-item"><a href="#testimonials" class="l-nav-link">Testimonial</a></li>
           <li class="l-nav-item l-nav-item-end"><a href="#article" class="l-nav-link">Article</a></li>
         </ul>
+        <div class="l-nav-mobile-action">
+          <a href="#contact" class="btn-nav">Contact</a>
+        </div>
       </nav>
       <div class="l-header-actions">
         <a href="#contact" class="btn-nav">Contact</a>
@@ -434,6 +443,24 @@
   </footer>
 
 
+  <script>
+    const mobileMenuCheckbox = document.getElementById('mobile-menu');
+    const mobileNavLinks = document.querySelectorAll('.l-nav-link, .l-nav-mobile-action a');
+    
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenuCheckbox) {
+          mobileMenuCheckbox.checked = false;
+        }
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenuCheckbox && mobileMenuCheckbox.checked) {
+        mobileMenuCheckbox.checked = false;
+      }
+    });
+  </script>
 </body>
 
 </html>
