@@ -17,7 +17,7 @@ html {
 body {
   font-family: var(--font-main);
   background-color: #FFFFFF;
-  color: #424E60;
+  color: #132238;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
@@ -136,6 +136,7 @@ button {
 
 .c-hero-button-text {
   font-weight: 550;
+  color: #132238;
 }
 
 .p-cv-container {
@@ -147,6 +148,10 @@ button {
   box-shadow: 0px 24px 80px rgba(19, 34, 56, 0.08);
   background-color: #fff;
   border: none;
+}
+
+.p-cv-subtitle {
+  color: #556070;
 }
 
 .p-cv-feature {
@@ -203,6 +208,14 @@ button {
   cursor: pointer;
 }
 
+.p-working-history-time {
+  color: #697484;
+}
+
+.p-working-history-desc {
+  color: #556070;
+}
+
 .p-working-card:hover .p-working-history-time {
   color: #1777E5;
 }
@@ -249,6 +262,10 @@ button {
   display: flex;
   justify-content: space-between;
   color: #fff;
+}
+
+.p-education__name {
+  color: #A5ACB5;
 }
 
 .c-slider-dots {
@@ -340,6 +357,19 @@ button {
 .p-qualifycation-section__description {
   text-align: center;
   width: 565px;
+  color: #556070;
+}
+
+.p-qualifycation__time{
+  color: #697484;
+}
+
+.p-qualifycation-detail__text {
+  color: #697484;
+}
+
+.p-wrapper-award__text {
+  color: #697484;
 }
 
 .p-qualifycation-wrapper-right {
@@ -402,6 +432,14 @@ button {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.p-sensitive-person-right {
+  color: #87909D;
+}
+
+.p-sensitive-person-img {
+  height: 100%;
+}
+
 .p-sensitive-person-left {
   display: flex;
   flex-direction: column;
@@ -461,6 +499,10 @@ button {
   padding-bottom: 70px;
 }
 
+.p-success-story-left-description {
+  color: #556070;
+}
+
 .p-success-story-right {
   border: 4px solid #FFD91A;
   background: #FFFBE8;
@@ -504,11 +546,17 @@ button {
   display: flex;
   gap: 10px;
   align-items: center;
+  color: #424E60;
 }
 
 .p-eventshow-wrapper-description{
   display: flex;
   justify-content: space-between;
+  color: #556070;
+}
+
+.p-event-descript {
+  color: #556070;
 }
 
 .p-eventshow-title {
@@ -558,13 +606,17 @@ button {
   gap: 5px;
 }
 
+.l-footer__text {
+  color: #C3C7CE;
+}
+
 .l-footer-bottom {
   padding-bottom: 20px;
   text-align: center;
 }
 
 .l-copyright {
-  font-size: 0.88rem;
+  font-size: 0.70rem;
   color: #A5ACB5;
 }
 
@@ -575,6 +627,10 @@ button {
   padding-bottom: 40px;
   border-bottom: 0.5px solid #A5ACB5;
   gap: 20px;
+  color: #A5ACB5;
+}
+
+.l-footer-content-description__text {
   color: #A5ACB5;
 }
 
@@ -848,6 +904,7 @@ button {
   .p-working-history-subtitle {
     width: 100%;
     max-width: 100%;
+    color: #556070;
   }
 
   .p-qualifycation-section__description {
