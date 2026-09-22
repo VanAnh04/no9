@@ -541,7 +541,7 @@ button {
 
 .l-footer-content__text {
   color: #fff;
-  font-size: 41px;
+  font-size: 34px;
 }
 
 .l-footer-content-description {
@@ -569,21 +569,65 @@ button {
 }
 
 .l-footer-link {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 0.6fr 0.8fr 1fr 1fr;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-bottom: 0.5px solid #A5ACB5;
+  gap: 20px;
+  color: #A5ACB5;
+}
+
+.l-footer-quick-item:hover {
+  color: #132238;
+  background-color: #FFD91A;
+  cursor: pointer;
+}
+
+.l-footer-follow-img:hover .l-footer-img{
+  background-color: #FFD91A;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.l-footer-follow-img:hover .l-footer-img-hover{
+  background-color: #FFD91A;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.l-footer-follow-img{
+  position: relative;
+  width: 100%;
+}
+
+.l-footer-img{
+  position: absolute;
+  opacity: 1;
+  width: 44;
+}
+
+.l-footer-img-hover{
+  position: absolute;
+  opacity: 0;
+  width: 44;
+}
+
+.l-footer-quick-item{
+  padding: 5px;
+  margin-top: 5px;
 }
 
 .l-footer-wapper-item {
   display: flex;
   list-style: none;
+  padding: 0px;
 }
 
 .l-footer-wapper-follow{
   display: flex;
   list-style: none;
+  padding: 0px;
 }
 .l-mobile-menu-input, #mobile-menu {
   position: absolute;
@@ -644,6 +688,7 @@ button {
   }
   .l-footer-wrapper-content{
     grid-template-columns: 1fr;
+    gap: unset;
   }
   .p-wapper-education{
     padding: 40px 10px 40px 10px;
@@ -843,4 +888,12 @@ button {
 }
 
 @media screen and (max-width: 480px) {
+  .l-footer-wapper-item {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .l-footer-wapper-follow{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
