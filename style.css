@@ -87,12 +87,16 @@ button {
 .p-hero-card {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 .p-hero-content {
-  padding-top: 85px;
-  width: 750px;
-  padding-left: 40px;
+  min-width: 750px;
+  padding: 85px 0px 20px 40px;
+}
+
+.p-hero-img {
+  height: auto;
 }
 
 .p-hero-desc {
@@ -137,6 +141,8 @@ button {
 .c-hero-button-text {
   font-weight: 550;
   color: #132238;
+  font-size: 12px;
+  padding: 0px 5px 0px 5px;
 }
 
 .p-cv-container {
@@ -159,6 +165,22 @@ button {
   list-style: none
 }
 
+.p-cv-hero-img {
+  height: auto;
+}
+
+.p-feature-boston{
+  height: auto;
+}
+
+.p-feature-cincinnati{
+  height: auto;
+}
+
+.p-feature-florida{
+  height: auto;
+}
+
 .p-cv-fearture-by {
   border: 1px solid #E6E8EB;
   height: fit-content;
@@ -173,8 +195,7 @@ button {
   padding: 15px;
 }
 .p-working-history-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 20px 40px 20px;
 }
 
 .p-working-history-title{
@@ -220,6 +241,18 @@ button {
   color: #1777E5;
 }
 
+.p-working-singapore{
+  height: auto;
+}
+
+.working-tokyo{
+  height: auto;
+}
+
+.p-working-johns-hopkins{
+  height: auto;
+}
+
 .c-arrow-btn {
   width: 44px;
   height: 44px;
@@ -251,11 +284,16 @@ button {
   background: #192238;
 }
 
+.p-education-img {
+  height: auto;
+}
+
 .p-wapper-education {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 132px;
   align-items: center;
+  padding: 0px 20px 0px 20px;
 }
 
 .p-wrapper-education-name-dot{
@@ -314,6 +352,7 @@ button {
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
   gap: 5px;
+  padding: 0px 20px 0px 20px;
 }
 
 .p-qualifycation-wrapper-left {
@@ -333,6 +372,10 @@ button {
 .p-qualifycation__address {
   color: #1777E5;
   font-weight: 500;
+}
+
+.p-qualifycation-wrapper-content {
+  padding: 0px 20px 0px 20px;
 }
 
 .p-qualifycation-detail__title {
@@ -415,7 +458,7 @@ button {
   border: 1px solid #E6E8EB;
   padding: 22px;
   margin-bottom: 40px;
-  height: 300px;
+  min-height: 300px;
 }
 
 .p-wrapper-award:nth-child(even) {
@@ -495,8 +538,7 @@ button {
 .p-wapper-success-story {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding: 70px 20px 70px 20px;
 }
 
 .p-success-story-left-description {
@@ -526,8 +568,7 @@ button {
 
 .p-eventshow-section {
   background: #F0F1F3;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 20px 30px 20px;
 }
 
 .p-eventshow-wrapper-grid{
@@ -572,6 +613,7 @@ button {
 
 .l-site-footer{
   background-color: #132238;
+  padding: 0px 20px 0px 20px;
 }
 
 .c-footer__title, .c-footer__title, .c-footer__title{
@@ -751,7 +793,7 @@ button {
     gap: unset;
   }
   .p-wapper-education{
-    padding: 40px 10px 40px 10px;
+    padding: 40px 20px 40px 20px;
     gap: unset;
     display: flex;
     flex-direction: column;
@@ -899,10 +941,8 @@ button {
   }
 
   .p-hero-content {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    min-width: 100%;
+    padding: 40px;
   }
 
   .p-working-history-subtitle {
@@ -941,10 +981,15 @@ button {
   transform: translateY(0px);
   }
   .p-hero-content {
-    width: auto;
+    min-width: auto;
+    padding: 30px;
   }
   .p-working-history-subtitle {
     width: auto;
+  }
+  .p-qualifycation-left-columns{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -957,5 +1002,20 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     height: 300px;
+  }
+  .p-hero-title {
+    font-size: 35px;
+  }
+  .p-success-story-left-title {
+    font-size: 35px;
+  }
+  .p-eventshow-title {
+    font-size: 35px;
+  }
+  .p-download {
+    padding: 5px;
+  }
+  .p-send {
+    padding: 5px;
   }
 }
