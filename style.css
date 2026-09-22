@@ -172,6 +172,10 @@ button {
   padding-bottom: 40px;
 }
 
+.p-working-history-title{
+  text-align: center;
+}
+
 .p-working-history-subtitle{
   width: 634px;
   text-align: center;
@@ -278,7 +282,6 @@ button {
 .p-education-content {
     display: grid;
     align-items: center;
-    height: 300px;
 }
 
 .p-education-title {
@@ -294,6 +297,10 @@ button {
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
   gap: 5px;
+}
+
+.p-qualifycation-wrapper-left {
+  padding: 0px;
 }
 
 .p-qualifycation-left-columns {
@@ -395,6 +402,12 @@ button {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.p-sensitive-person-left {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 .p-sensitive-person-right-avt {
   display: flex;
   justify-content: left;
@@ -434,11 +447,10 @@ button {
   content: "";
   position: absolute;
   left: 0;
-  top: 15%;
-  height: 70%;
+  top: 18%;
+  height: 68%;
   border-left: 1px solid #424E60;
 }
-  width: 800px;
   padding: 70px;
 }
 
@@ -595,6 +607,9 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
+  .p-hero-content{
+    padding-top: 0px;
+  }
   .p-hero-card{
     grid-template-columns: 1fr;
     display: flex;
@@ -614,6 +629,12 @@ button {
   .p-qualifycation-wrapper{
     grid-template-columns: 1fr;
   }
+  .p-qualifycation-wrapper-left {
+    padding: 10px;
+  }
+  .p-qualifycation-wrapper-right{
+    padding: 10px;
+  }
   .p-wapper-success-story{
     grid-template-columns: 1fr;
     padding: 10px;
@@ -625,10 +646,7 @@ button {
     grid-template-columns: 1fr;
   }
   .p-wapper-education{
-    grid-template-columns: 1fr;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 40px 10px 40px 10px;
     gap: unset;
     display: flex;
     flex-direction: column;
@@ -640,9 +658,6 @@ button {
   .p-wrapper-sensitive-person{
     grid-template-columns: 1fr;
     background-color: #132238;
-  }
-  .sensitive-person-img {
-    width: 80%;
   }
   .l-footer-link{
     display: flex;
@@ -828,5 +843,4 @@ button {
 }
 
 @media screen and (max-width: 480px) {
-  .p-cv-feature{}
 }
