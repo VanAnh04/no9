@@ -657,6 +657,10 @@ button {
   width: 100%;
 }
 
+.l-footer-follow {
+  width: 300px;
+}
+
 .l-footer-img{
   position: absolute;
   opacity: 1;
@@ -952,5 +956,6 @@ button {
   .l-footer-wapper-follow{
     display: grid;
     grid-template-columns: 1fr;
+    height: 300px;
   }
 }
