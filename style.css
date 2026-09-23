@@ -92,7 +92,7 @@ button {
 
 .p-hero-content {
   min-width: 750px;
-  padding: 85px 0px 20px 40px;
+  padding: 60px 0px 20px 40px;
 }
 
 .p-hero-img {
@@ -101,10 +101,12 @@ button {
 
 .p-hero-desc {
   font-weight: 500;
+  max-width: 500px;
 }
 
 .p-hero-title {
-  font-size: 3.1rem;
+  font-size: 3.2rem;
+  max-width: 650px;
 }
 
 .p-hero-name {
@@ -114,6 +116,7 @@ button {
 .c-hero-button {
   border: 2px solid #FFD91A;
   background-color: #ffff;
+  padding: 0px 10px 0px 10px;
 }
 
 .p-send {
