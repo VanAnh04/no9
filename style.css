@@ -55,6 +55,7 @@ button {
   justify-content: end;
   align-items: center;
   gap: 15px;
+  height: 92px;
 }
 
 .l-nav-list {
@@ -66,10 +67,16 @@ button {
 .l-header-actions {
   background: #FFD91A;
   padding: 5px 18px;
+  width: 107px;
+  height: 48px;
+  align-items: center;
+  display: flex;
 }
 
 .l-nav-link {
   padding: 5px 10px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .l-nav-link:hover {
@@ -82,6 +89,13 @@ button {
 
 .p-hero-section {
   background-color: #FFF7D1;
+}
+
+.p-hero-title {
+  font-family: JetBrains Mono;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
 }
 
 .p-hero-card {
@@ -100,8 +114,11 @@ button {
 }
 
 .p-hero-desc {
-  font-weight: 500;
   max-width: 500px;
+  font-family: JetBrains Mono;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .p-hero-title {
@@ -110,7 +127,10 @@ button {
 }
 
 .p-hero-name {
-  font-weight: 700;
+  font-family: JetBrains Mono;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .c-hero-button {
@@ -142,10 +162,12 @@ button {
 }
 
 .c-hero-button-text {
-  font-weight: 550;
   color: #132238;
-  font-size: 12px;
   padding: 0px 5px 0px 5px;
+  font-family: JetBrains Mono;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 64px;
 }
 
 .p-cv-container {
@@ -234,10 +256,22 @@ button {
 
 .p-working-history-time {
   color: #697484;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.p-working-history-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .p-working-history-desc {
   color: #556070;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .p-working-card:hover .p-working-history-time {
@@ -305,6 +339,20 @@ button {
   color: #fff;
 }
 
+.p-wrapper-education-name-name {
+  font-weight: 600; 
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.p-wrapper-education-name-psychiatrist {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #A5ACB5;
+}
+
 .p-education__name {
   color: #A5ACB5;
 }
@@ -344,10 +392,17 @@ button {
 
 .p-education-title {
   color: #FFD91A;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .p-education-description {
   color: #fff;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .p-qualifycation-wrapper {
@@ -383,8 +438,9 @@ button {
 
 .p-qualifycation-detail__title {
   color:#132238;
-  font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .p-qualifycation-wrapper-content {
@@ -408,6 +464,9 @@ button {
 
 .p-qualifycation__time{
   color: #697484;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .p-qualifycation-detail__text {
@@ -498,8 +557,19 @@ button {
   gap: 10px;
 }
 
+.p-sensitive-person-right-writenby-title{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #697484;
+}
+
 .p-sensitive-person-right-writenby {
   color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .p-sensitive-person-right__name {
@@ -512,11 +582,16 @@ button {
   justify-content: left;
   align-items: center;
   color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .p-sensitive-person-right__title {
   color: #fff;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .p-sensitive-person-section {
@@ -546,6 +621,11 @@ button {
 
 .p-success-story-left-description {
   color: #556070;
+}
+
+.p-success-story-right-text {
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .p-success-story-right {
@@ -621,6 +701,8 @@ button {
 
 .c-footer__title, .c-footer__title, .c-footer__title{
   color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .l-footer-wrapper-content {
@@ -634,7 +716,9 @@ button {
 
 .l-footer-content__text {
   color: #fff;
-  font-size: 34px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
 }
 
 .l-footer-content-description {
@@ -653,11 +737,19 @@ button {
 
 .l-footer__text {
   color: #C3C7CE;
+  font-family: JetBrains Mono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .l-footer-bottom {
   padding-bottom: 20px;
   text-align: center;
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .l-copyright {
@@ -677,6 +769,10 @@ button {
 
 .l-footer-content-description__text {
   color: #A5ACB5;
+  font-family: JetBrains Mono;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .l-footer-quick-item:hover {
