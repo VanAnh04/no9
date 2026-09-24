@@ -340,6 +340,15 @@ button {
   color: #000;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);;
   border: 2px solid #FFD91A;
+  position: relative;
+}
+
+.c-pre-img{
+  position: absolute;
+}
+
+.c-next-img{
+  position: absolute;
 }
 
 .c-arrow-btn svg {
@@ -358,7 +367,7 @@ button {
 
 .p-education-section{
   background: #132238;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 .p-education-img {
@@ -506,7 +515,7 @@ button {
 }
 
 .p-qualifycation-section {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 .p-qualifycation-section__title {
@@ -726,7 +735,7 @@ button {
 }
 
 .p-success-story-section{
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 .p-success-story-left-description {
@@ -783,7 +792,7 @@ button {
 
 .p-eventshow-section {
   background: #F0F1F3;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 .p-eventshow-description {
@@ -804,6 +813,10 @@ button {
 .p-eventshow-grid {
   background-color: #fff;
   padding: 30px;
+}
+
+.p-eventshow-button {
+  width: 140px;
 }
 
 .c-event-wrapper-time {
@@ -1070,6 +1083,15 @@ button {
     flex-direction: column;
     align-items: center;
   }
+  .p-cv-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .p-cv-subtitle{
+    text-align: center;
+    padding: 0px;
+  }
   .p-qualifycation-wrapper{
     grid-template-columns: 1fr;
   }
@@ -1098,7 +1120,7 @@ button {
     align-items: center;
   }
   .p-eventshow-section{
-    padding: 10px;
+    padding: 20px;
   }
   .p-wrapper-sensitive-person{
     grid-template-columns: 1fr;
@@ -1278,6 +1300,9 @@ button {
   .l-footer-content-description {
     align-items: center;
   }
+  .p-education-img {
+    padding-top: 20px;
+  }
 }
 
 
@@ -1331,6 +1356,18 @@ button {
     display: flex;
     flex-direction: column;
   }
+  .l-footer-content__text, .l-footer-content-description__text {
+    text-align: center;
+  }
+  .p-qualifycation-wrapper-right{
+    padding: 0 20px;
+  }
+  .p-eventshow-description {
+    width: auto;
+  }
+  .c-hero-button-text {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1362,4 +1399,20 @@ button {
     font-size: 12px;
     line-height: 20px;
   }
+  .p-qualifycation-wrapper-right{
+    padding: 10px;
+  }
+  .p-qualifycation-section__title{
+    font-size: 30px;
+  }
+  .p-success-story-right-text{
+    font-size: 20px;
+  }
+  .l-footer-content__text {
+    font-size: 30px;
+  }
+  .l-footer__text{
+    text-align: center;
+  }
+
 }
